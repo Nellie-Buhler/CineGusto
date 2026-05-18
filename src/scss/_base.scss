@@ -1,7 +1,80 @@
 * {
+  --black: #1b1a18;
+  --white: #ffffff;
+}
+
+@font-face {
+  font-family: "PP-Formula";
+  src: url("../font/PP-Formula/PPFormula-ExtendedBold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "PP-Formula";
+  src: url("../font/PP-Formula/PPFormula-ExtendedMedium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "PP-Formula";
+  src: url("../font/PP-Formula/PPFormula-NarrowRegular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "PP-Formula";
+  src: url("../font/PP-Formula/PPFormula-Light.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "PP-Formula";
+  src: url("../font/PP-Formula/PPFormula-SemiCondensedExtralight.woff2")
+    format("woff2");
+  font-style: normal;
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "PP-Formula";
+  src: url("../font/PP-Formula/PPFormula-CondensedExtralight.woff2")
+    format("woff2");
+  font-style: normal;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Helvetica-Neue";
+  src: url("../font/Helvetica-Neue/HelveticaNeue-Medium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Helvetica-Neue";
+  src: url("../font/Helvetica-Neue/HelveticaNeue-Roman.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Helvetica-Neue";
+  src: url("../font/Helvetica-Neue/HelveticaNeue-Light.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 300;
+}
+
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Helvetica-Neue";
+  font-weight: 400;
+  font-size: font-size: clamp(16px, 18px, 22px);;
 }
 
 a {
