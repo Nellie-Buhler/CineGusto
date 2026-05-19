@@ -1,0 +1,38 @@
+.homepage {
+  padding-top: 15vh;
+  #title-img {
+    height: 50%;
+    clip-path: inset(2% 0 25% 0);
+    // margin: -25px 0px;
+  }
+
+  p {
+    font-family: "Helvetica-Neue";
+    font-size: 16px;
+  }
+}
+
+.h-bienvenue {
+  display: flex;
+  h2 {
+    font-family: "PP-Formula";
+    font-size: 80px;
+    text-transform: uppercase;
+    letter-spacing: -5px;
+    font-weight: 500;
+    line-height: 0; /* 90% */
+    font-feature-settings: "ss01" on;
+    padding-top: 15px;
+  }
+
+  .h-bienvenu-line {
+    background-color: var(--black);
+    width: 1px;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
