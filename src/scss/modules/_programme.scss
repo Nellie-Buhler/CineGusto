@@ -1,0 +1,20 @@
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.tab.active {
+  background: white;
+  color: black;
+}
+
+.tab-jour-content {
+  display: none;
+}
+
+.tab-jour-content.active {
+  display: block;
+}

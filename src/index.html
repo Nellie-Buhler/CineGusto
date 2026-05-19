@@ -6,24 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="scss/main.scss" />
   </head>
-  <header><extends src="navigation.html"></extends></header>
-  <body class="homepage">
-    <div class="container">
-      <div class="row">
-        <div class="col-5">colonne 1</div>
-        <div class="col-5">colonne 2</div>
-      </div>
-    </div>
+  <header><include src="navigation.html"></include></header>
+  <body class="homepage container">
     <h1>Le premier festival suisse à marier cinéma et gastronomie</h1>
     <img
-      src="img/Festival/Cover-Festival.jpg"
+      src="img/Festival/Cover-Festival.jpg?as=webp"
       alt="photo d'une salle de cinéma"
     />
-    <div class="h-bienvenue">
-      <div>
+    <div class="h-bienvenue row">
+      <div class="col-4">
         <h2>Bienvenue</h2>
       </div>
-      <div>
+      <div class="col-6">
         <p>
           Ici, les films cultes et les pépites méconnues éveillent les sens,
           tandis que des chef·fe·s étoilé·e·s transforment les recettes du grand
@@ -33,8 +27,8 @@
         </p>
       </div>
     </div>
-    <div class="h-programme">
-      <div class="h-programme-text">
+    <div class="h-programme row">
+      <div class="col-6" class="h-programme-text">
         <h2>Un festival où le cinéma se vit… et se déguste !</h2>
         <p>
           Chaque jour du festival, un chef invité imagine et prépare un repas
@@ -43,71 +37,81 @@
           cinématographique et permet de voyager encore plus loin, à travers les
           saveurs et les cultures du monde.
         </p>
+        <button>
+          <a href="programme.html">Voir le programme</a>
+        </button>
       </div>
-      <div class="h-programme-img">
-        <img src="img/Repa/Repa-Asie.jpg" alt="photo d'un plat de sushi" />
+      <div class="col-4" class="h-programme-img">
+        <img
+          src="img/Repa/Repa-Asie.jpg?as=webp"
+          alt="photo d'un plat de sushi"
+        />
       </div>
-      <button><a href="">Voir le programme</a></button>
     </div>
     <hr />
-    <div class="h-destination">
-      <div class="h-destination-card">
-        <div class="country-polaroid">
-          <div class="c.p.-description">
-            <p>Jour-01</p>
-            <span class="c.p.-date">08.10</span>
+    <div class="h-destination row">
+      <div class="col-10">
+        <div class="h-destination-card">
+          <div class="country-polaroid">
+            <div class="c.p.-description">
+              <p>Jour-01</p>
+              <span class="c.p.-date">08.10</span>
+            </div>
+            <h3>Asie</h3>
+            <img
+              src="img/Festival/Photo-Asie.jpg?as=webp"
+              alt="photo d'un paysage d'asie"
+            />
+            <button><a href="">Voir le programme</a></button>
           </div>
-          <h3>Asie</h3>
-          <img
-            src="img/Festival/Photo-Asie.jpg"
-            alt="photo d'un paysage d'asie"
-          />
+        </div>
+        <div class="h-destination-card">
+          <div class="country-polaroid">
+            <div class="c.p.-description">
+              <p>Jour-02</p>
+              <span class="c.p.-date">09.10</span>
+            </div>
+            <h3>Europe</h3>
+            <img
+              src="img/Festival/Photo-Europe.jpg?as=webp"
+              alt="photo d'un paysage d'europe"
+            />
+            <button><a href="">Voir le programme</a></button>
+          </div>
+        </div>
+        <div class="h-destination-card">
+          <div class="country-polaroid">
+            <div class="c.p.-description">
+              <p>Jour-03</p>
+              <span class="c.p.-date">10.10</span>
+            </div>
+            <h3>Amérique latine</h3>
+            <img
+              src="img/Festival/Photo-AmeriqueLatine.jpg?as=webp"
+              alt="photo d'un paysage d'amérique latine"
+            />
+            <button><a href="">Voir le programme</a></button>
+          </div>
+        </div>
+        <div class="h-destination-card">
+          <div class="country-polaroid">
+            <div class="c.p.-description">
+              <p>Jour-04</p>
+              <span class="c.p.-date">11.10</span>
+            </div>
+            <h3>Transculture</h3>
+            <img
+              src="img/Festival/Photo-Transculture.jpg?as=webp"
+              alt="photo d'un paysage de bord de mer"
+            />
+            <button><a href="">Voir le programme</a></button>
+          </div>
         </div>
       </div>
-      <div class="h-destination-card">
-        <div class="country-polaroid">
-          <div class="c.p.-description">
-            <p>Jour-02</p>
-            <span class="c.p.-date">09.10</span>
-          </div>
-          <h3>Europe</h3>
-          <img
-            src="img/Festival/Photo-Europe.jpg"
-            alt="photo d'un paysage d'europe"
-          />
-        </div>
-      </div>
-      <div class="h-destination-card">
-        <div class="country-polaroid">
-          <div class="c.p.-description">
-            <p>Jour-03</p>
-            <span class="c.p.-date">10.10</span>
-          </div>
-          <h3>Amérique latine</h3>
-          <img
-            src="img/Festival/Photo-AmeriqueLatine.jpg"
-            alt="photo d'un paysage d'amérique latine"
-          />
-        </div>
-      </div>
-      <div class="h-destination-card">
-        <div class="country-polaroid">
-          <div class="c.p.-description">
-            <p>Jour-04</p>
-            <span class="c.p.-date">11.10</span>
-          </div>
-          <h3>Transculture</h3>
-          <img
-            src="img/Festival/Photo-Transculture.jpg"
-            alt="photo d'un paysage de bord de mer"
-          />
-        </div>
-      </div>
-      <button><a href="">Voir le programme</a></button>
     </div>
     <hr />
-    <div class="h-vod">
-      <div class="h-vod-content">
+    <div class="h-vod row">
+      <div class="h-vod-content col-6">
         <h2>Le festival chez vous : Plateforme VOD</h2>
         <p>
           Avec notre plateforme VOD, revivez l’intégralité du festival depuis
@@ -117,22 +121,22 @@
           familles, ou celles et ceux qui veulent prolonger l’expérience après
           le festival.
         </p>
-        <div class="h-vod-card">
-          <div class="vod-card">
+        <div class="h-vod-card row">
+          <div class="vod-card col-2">
             <div class="vod-card-title">film vod</div>
             <div class="vod-card-text">
               <p>Accès : 48h</p>
               <p>8 CHF.-</p>
             </div>
           </div>
-          <div class="vod-card">
+          <div class="vod-card col-2">
             <div class="vod-card-title">Pass VOD 5 films</div>
             <div class="vod-card-text">
               <p>Accès : 1 mois</p>
               <p>30 CHF.-</p>
             </div>
           </div>
-          <div class="vod-card">
+          <div class="vod-card col-2">
             <div class="vod-card-title">Pass VOD festival</div>
             <div class="vod-card-text">
               <p>Accès : 1 mois</p>
@@ -142,21 +146,23 @@
         </div>
         <button><a href="">Voir les détails</a></button>
       </div>
-      <div class="h-vod-img">
-        <img src="img/Festival/Mockup_VOD.png" alt="" />
+      <div class="h-vod-img col-4">
+        <img src="img/Festival/Mockup_VOD.png?as=webp" alt="" />
       </div>
     </div>
-    <div class="h-partenaires">
-      <img
-        src="img/Logo/VilleBulle_Black.svg"
-        alt="logo de la ville de bulle"
-      />
-      <img src="img/Logo/GastroSuisse_Black.svg" alt="logo de gastrosuisse" />
-      <img
-        src="img/Logo/LoterieRomande_Black.svg"
-        alt="logo de la lotterie romande"
-      />
-      <img src="img/Logo/Fribourg_Black.svg" alt="logo de fribourg région" />
+    <div class="h-partenaires row">
+      <div class="col-10">
+        <img
+          src="img/Logo/VilleBulle_Black.svg"
+          alt="logo de la ville de bulle"
+        />
+        <img src="img/Logo/GastroSuisse_Black.svg" alt="logo de gastrosuisse" />
+        <img
+          src="img/Logo/LoterieRomande_Black.svg"
+          alt="logo de la lotterie romande"
+        />
+        <img src="img/Logo/Fribourg_Black.svg" alt="logo de fribourg région" />
+      </div>
     </div>
     <script src="js/main.js" type="module"></script>
   </body>

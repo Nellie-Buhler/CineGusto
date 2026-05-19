@@ -1,7 +1,9 @@
 .l-nav {
+  position: fixed;
+  width: 100vw;
   background-color: rgb(255, 139, 228);
 }
 
 .l-footer {
-  background-color: aquamarine;
+  background-color: var(--black);
 }
