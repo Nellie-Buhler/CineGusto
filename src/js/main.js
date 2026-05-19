@@ -1,4 +1,4 @@
-// Onglets principaux
+// Onglets programme
 document.querySelectorAll(".tab-principal").forEach((tab) => {
   tab.addEventListener("click", () => {
     document
@@ -26,7 +26,7 @@ document.querySelectorAll(".tab-principal").forEach((tab) => {
   });
 });
 
-// Onglets jours
+// Onglets programme : jours
 document.querySelectorAll(".tab-jour").forEach((tab) => {
   tab.addEventListener("click", () => {
     document
@@ -38,5 +38,14 @@ document.querySelectorAll(".tab-jour").forEach((tab) => {
 
     tab.classList.add("active");
     document.getElementById(tab.dataset.jour).classList.add("active");
+  });
+});
+
+// Dropdown header
+// Dropdown header
+document.querySelectorAll(".dropdown").forEach((dropdown) => {
+  dropdown.querySelector(".nav-btn").addEventListener("click", () => {
+    dropdown.classList.toggle("active");
+    dropdown.querySelector(".nav-btn").classList.toggle("open");
   });
 });

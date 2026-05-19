@@ -1,7 +1,10 @@
 .l-nav {
   position: fixed;
   width: 100vw;
-  background-color: rgb(255, 139, 228);
+  background-color: rgb(255, 255, 255);
+  border-color: var(--black);
+  border-style: solid;
+  border-top: 1px;
 }
 
 .l-footer {
