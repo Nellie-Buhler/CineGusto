@@ -103,3 +103,61 @@
 .d-img-transculture {
   background-image: url(../img/Festival/Timbre-Transculture.jpg);
 }
+
+.r-card {
+  display: flex;
+  flex-direction: row;
+
+  img {
+    height: 15vw;
+  }
+
+  .r-card-content {
+    h2 {
+      font-feature-settings: "ss01" on;
+      font-family: "PP Formula";
+      font-size: 60px;
+      font-weight: 700;
+      line-height: 70px;
+      text-transform: uppercase;
+    }
+
+    .r-card-text {
+      display: flex;
+      flex-direction: column;
+      font-family: "PP Formula";
+      font-size: 18px;
+      font-weight: 400;
+
+      #r-country {
+        font-size: 22px;
+      }
+
+      .r-card-text-part01 {
+        padding: 5px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .r-card-text-part02 {
+        padding: 5px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: "Helvetica Neue";
+        font-size: 18px;
+
+        font-weight: 400;
+      }
+    }
+
+    .r-card-button {
+      margin: 15px 0;
+
+      button {
+        margin-right: 30px;
+      }
+    }
+  }
+}
