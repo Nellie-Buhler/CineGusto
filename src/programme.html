@@ -6,76 +6,22 @@
     <link rel="stylesheet" href="scss/main.scss" />
   </head>
   <header><include src="navigation.html"></include></header>
-  <body>
-    <!-- Onglets principaux -->
-    <div class="tabs">
-      <button class="tab-principal active" data-tab="seances">Séances</button>
-      <button class="tab-principal" data-tab="destinations">
-        Destinations
-      </button>
-      <button class="tab-principal" data-tab="repas">Repas</button>
-    </div>
+  <body class="programme">
+    <div class="p-nav">
+      <h1>Programmes</h1>
 
-    <!-- Contenu Séances -->
-    <div class="tab-content active" id="seances">
-      <h2>Séance</h2>
-      <div class="tabs-jours">
-        <button class="tab-jour active" data-jour="asie">08.10 – Asie</button>
-        <button class="tab-jour" data-jour="europe">09.10 – Europe</button>
-        <button class="tab-jour" data-jour="amerique">
-          10.10 – Amérique latine
+      <div class="tabs">
+        <button class="tab-principal active" data-tab="destinations">
+          Destinations
         </button>
-        <button class="tab-jour" data-jour="transculture">
-          11.10 – Transculture
-        </button>
-      </div>
-      <div class="tab-jour-content active" id="asie">
-        <h2>Séances Asie</h2>
-        <div class="p-card">
-          <div class="p-card-part01">
-            <img
-              src="img/Film/Extrait-VoyageChihiro.jpeg"
-              alt="photo du film le voyage de chihiro"
-            />
-            <div class="p-card-text">
-              <h2>Le Voyage de Chihiro</h2>
-              <h3>Hayao Miyazaki</h3>
-              <div class="p-card-text-details">
-                <p>2001</p>
-                <div class="p-card-details-line"></div>
-                <p>Japon</p>
-                <div class="p-card-details-line"></div>
-                <p>Fantaisie</p>
-                <div class="p-card-details-line"></div>
-                <p>124 minutes</p>
-              </div>
-              <p>
-                Dans cet univers peuplé d’esprits, la nourriture devient symbole
-                de désir, d’excès et de transformation.
-              </p>
-            </div>
-          </div>
-          <div class="p-card02">
-            <div class="p-card-info">14h00</div>
-            <div class="p-card-info">Cinéma Le Prado</div>
-            <button><a href="">Détails du film</a></button>
-          </div>
-        </div>
-      </div>
-      <div class="tab-jour-content" id="europe"><h2>Séances Europe</h2></div>
-      <div class="tab-jour-content" id="amerique">
-        <h2>Séances Amérique latine</h2>
-      </div>
-      <div class="tab-jour-content" id="transculture">
-        <h2>Séances Transculture</h2>
+        <button class="tab-principal" data-tab="repas">Gastronomie</button>
       </div>
     </div>
 
-    <!-- Contenu Destinations -->
     <div class="tab-content" id="destinations">
       <h2>Destinations</h2>
-      <div class="d-card">
-        <div class="d-card-text">
+      <div class="d-card box container row">
+        <div class="d-card-text col-6">
           <div class="d-card-text-info">
             <p>Jours-01</p>
             <p>08.10</p>
@@ -95,16 +41,12 @@
               raconter le monde.
             </p>
           </div>
-          <button><a href="">Voir le programme</a></button>
+          <button><a href="">Voir le programme du jour</a></button>
         </div>
-        <img
-          src="img/Festival/Photo-Asie.jpg"
-          alt="photo d'un paysage d'asie"
-        />
+        <div class="d-img-asie col-4"></div>
       </div>
     </div>
 
-    <!-- Contenu Repas -->
     <div class="tab-content" id="repas">
       <h2>Repas</h2>
       <div class="r-card">

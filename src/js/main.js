@@ -26,22 +26,6 @@ document.querySelectorAll(".tab-principal").forEach((tab) => {
   });
 });
 
-// Onglets programme : jours
-document.querySelectorAll(".tab-jour").forEach((tab) => {
-  tab.addEventListener("click", () => {
-    document
-      .querySelectorAll(".tab-jour")
-      .forEach((t) => t.classList.remove("active"));
-    document
-      .querySelectorAll(".tab-jour-content")
-      .forEach((c) => c.classList.remove("active"));
-
-    tab.classList.add("active");
-    document.getElementById(tab.dataset.jour).classList.add("active");
-  });
-});
-
-// Dropdown header
 // Dropdown header
 document.querySelectorAll(".dropdown").forEach((dropdown) => {
   dropdown.querySelector(".nav-btn").addEventListener("click", () => {
