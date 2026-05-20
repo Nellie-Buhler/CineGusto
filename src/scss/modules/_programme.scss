@@ -78,10 +78,28 @@
     }
   }
 
-  .d-img-asie {
-    background-image: url(../img/Festival/Timbre-Asie.jpg);
+  .d-img-asie,
+  .d-img-europe,
+  .d-img-amerique,
+  .d-img-transculture {
     background-size: cover;
-    width: 515px;
-    height: 515px;
+    width: 32vw;
+    height: 32vw;
   }
+}
+
+.d-img-asie {
+  background-image: url(../img/Festival/Timbre-Asie.jpg);
+}
+
+.d-img-europe {
+  background-image: url(../img/Festival/Timbre-Europe.jpg);
+}
+
+.d-img-amerique {
+  background-image: url(../img/Festival/Timbre-AmeriqueLatine.jpg);
+}
+
+.d-img-transculture {
+  background-image: url(../img/Festival/Timbre-Transculture.jpg);
 }
