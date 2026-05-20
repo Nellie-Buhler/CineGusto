@@ -20,10 +20,38 @@
 }
 
 .p-nav {
-  padding-top: 120px;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  padding-top: 50px;
+  margin-top: 150px;
+  z-index: 1;
+  position: sticky;
+  top: 7%;
+  background-color: var(--black);
+  color: white;
+}
+
+.p-button-black {
+  background-color: var(--black);
+  border: 1px solid white;
+  color: white;
+  text-align: center;
+  font-family: "PP Formula";
+  font-size: 26px;
+  font-weight: 300;
+  padding: 15px 80px;
+  margin: 0 15px;
+}
+
+.p-button-black:hover {
+  background-color: white;
+  border: 1px solid var(--black);
+  color: var(--black);
 }
 
 .d-card {
+  margin-top: 100px;
   gap: 30px;
   .d-card-text {
     display: flex;
@@ -35,7 +63,7 @@
       font-feature-settings: "ss01" on;
       letter-spacing: -7px;
       text-align: center;
-      font-size: 115px;
+      font-size: 95px;
       font-weight: 200;
       line-height: 120px;
       text-transform: uppercase;
@@ -86,27 +114,28 @@
     width: 32vw;
     height: 32vw;
   }
-}
 
-.d-img-asie {
-  background-image: url(../img/Festival/Timbre-Asie.jpg);
-}
+  .d-img-asie {
+    background-image: url(../img/Festival/Timbre-Asie.jpg);
+  }
 
-.d-img-europe {
-  background-image: url(../img/Festival/Timbre-Europe.jpg);
-}
+  .d-img-europe {
+    background-image: url(../img/Festival/Timbre-Europe.jpg);
+  }
 
-.d-img-amerique {
-  background-image: url(../img/Festival/Timbre-AmeriqueLatine.jpg);
-}
+  .d-img-amerique {
+    background-image: url(../img/Festival/Timbre-AmeriqueLatine.jpg);
+  }
 
-.d-img-transculture {
-  background-image: url(../img/Festival/Timbre-Transculture.jpg);
+  .d-img-transculture {
+    background-image: url(../img/Festival/Timbre-Transculture.jpg);
+  }
 }
 
 .r-card {
   display: flex;
   flex-direction: row;
+  margin-top: 100px;
 
   .r-img {
     overflow: hidden;
