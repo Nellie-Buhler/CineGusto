@@ -108,8 +108,13 @@
   display: flex;
   flex-direction: row;
 
-  img {
-    height: 15vw;
+  .r-img {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    img {
+      height: 20vw;
+    }
   }
 
   .r-card-content {
