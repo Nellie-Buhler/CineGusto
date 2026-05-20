@@ -3,4 +3,106 @@
   font-family: "Helvetica-Neue";
   font-weight: 400;
   font-size: 18px;
+  padding: 30px;
+
+  img {
+    height: 120px;
+  }
+}
+
+.f-part-01 {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+
+  .f-newsletter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+    .f-input-name {
+      display: flex;
+      justify-content: space-between;
+    }
+    .f-input-email {
+      display: flex;
+    }
+  }
+
+  .f-vod {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    .f-vod-input {
+      background-color: white;
+      color: var(--black);
+      padding: 15px 30px;
+      align-self: flex-start;
+
+      a {
+        font-family: "Helvetica Neue";
+        font-size: 18px;
+        font-weight: 500;
+        text-decoration: none;
+      }
+    }
+  }
+
+  #name,
+  #firstname,
+  #email {
+    background-color: var(--black);
+    border: 1px solid white;
+    padding: 10px 15px;
+    font-family: "Helvetica-Neue";
+    font-size: 20px;
+  }
+}
+
+.f-part-02 {
+  display: flex;
+  justify-content: space-between;
+
+  .f-nav {
+    display: flex;
+    gap: 20px;
+    .f-nav-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      gap: 15px;
+
+      a {
+        font-family: "Helvetica Neue";
+        font-size: 18px;
+        font-weight: 400;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .f-contact {
+    display: flex;
+    flex-direction: column;
+
+    .f-contact-text {
+      display: flex;
+      gap: 30px;
+    }
+
+    .f-contact-carte {
+      width: 50vw;
+    }
+  }
+}
+
+.f-part-03 {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+
+  .f-logoreseaux {
+    display: flex;
+    gap: 60px;
+  }
 }
