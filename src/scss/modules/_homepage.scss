@@ -36,3 +36,158 @@
     justify-content: center;
   }
 }
+
+.h-programme {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 15px;
+  .h-programme-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  .h-programme-img {
+    background-image: url(../img/Repa/Repa-Asie.jpg);
+    background-size: cover;
+    height: 23vw;
+    width: 35vw;
+    clip-path: inset(0 14% 0 14%);
+  }
+}
+
+.h-destination {
+  .h-destination-box {
+    display: flex;
+    gap: 15px;
+    padding: 30px;
+    .h-destination-card {
+      .country-polaroid {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 411px;
+        height: 493px;
+        color: white;
+        background-color: var(--black);
+
+        h3 {
+          font-family: "PP-Formula";
+          font-weight: 400;
+          font-size: 36px;
+          align-self: flex-start;
+          padding-left: 10px;
+        }
+
+        .country-polaroid-img-amerique {
+          background-size: cover;
+          width: 393px;
+          height: 377px;
+          background-image: url(../img/Festival/Photo-AmeriqueLatine.jpg);
+        }
+
+        .country-polaroid-img-asie {
+          background-size: cover;
+          width: 393px;
+          height: 377px;
+          background-image: url(../img/Festival/Photo-Asie.jpg);
+        }
+
+        .country-polaroid-img-europe {
+          background-size: cover;
+          width: 393px;
+          height: 377px;
+          background-image: url(../img/Festival/Photo-Europe.jpg);
+        }
+
+        .country-polaroid-img-transculture {
+          background-size: cover;
+          width: 393px;
+          height: 377px;
+          background-image: url(../img/Festival/Photo-Transculture.jpg);
+        }
+
+        .c.p.-description {
+          display: flex;
+          justify-content: space-between;
+          width: 20vw;
+          span {
+            font-family: "Helvetica-Neue";
+            width: 400;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.h-vod {
+  display: flex;
+  padding: 30px;
+  background-color: var(--black);
+  color: white;
+
+  .h-vod-img {
+    height: 20%;
+  }
+
+  .h-vod-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+.h-vod-card-box {
+  display: flex;
+  justify-content: space-around;
+  .vod-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    color: var(--black);
+    width: 18vw;
+    padding: 10px;
+
+    .vod-card-title {
+      font-family: "PP-Formula";
+      font-weight: 200;
+      font-size: 18px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    .vod-card-text {
+      display: flex;
+      justify-content: space-between;
+      font-size: 16px;
+    }
+  }
+}
+
+.h-partenaires {
+  height: 290px;
+  h2 {
+    text-align: center;
+    font-family: "PP-Formula";
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    font-weight: 500;
+    line-height: 75px;
+    font-feature-settings: "ss01" on;
+  }
+
+  .h-partenaires-box {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  img {
+    height: 3.5vw;
+  }
+}

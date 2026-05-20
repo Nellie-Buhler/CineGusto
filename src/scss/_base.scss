@@ -124,7 +124,7 @@ h2 {
 
 .box {
   border: 1px solid var(--black);
-  padding: 15px;
+  padding: 20px 0px;
 }
 
 button {
@@ -144,5 +144,38 @@ button {
     font-size: 20px;
     font-weight: 400;
     text-decoration: none;
+  }
+
+  transition: 0.5s;
+}
+
+button:hover {
+  border: 1px solid var(--Black, #1b1a18);
+  background-color: var(--Black, #1b1a18);
+
+  a,
+  p {
+    color: var(--white);
+  }
+}
+
+.button-black {
+  border: 1px solid white;
+  background-color: var(--Black);
+  a,
+  p {
+    color: white;
+  }
+
+  transition: 0.5s;
+}
+
+.button-black:hover {
+  border: 1px solid white;
+  background-color: white;
+
+  a,
+  p {
+    color: var(--black);
   }
 }

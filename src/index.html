@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>eikon parcel starter</title>
+    <title>CinéGusto</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="scss/main.scss" />
   </head>
@@ -32,8 +32,8 @@
       </div>
     </div>
     <div class="h-programme box container row">
-      <div class="col-6" class="h-programme-text">
-        <h2>Un festival où le cinéma se vit… et se déguste !</h2>
+      <div class="col-6 h-programme-text">
+        <h2>Un festival où le cinéma se vit… <br />et se déguste !</h2>
         <p>
           Chaque jour du festival, un chef invité imagine et prépare un repas
           exclusif inspiré par le film projeté. En écho aux images et aux
@@ -41,20 +41,15 @@
           cinématographique et permet de voyager encore plus loin, à travers les
           saveurs et les cultures du monde.
         </p>
-        <button>
+        <button id="h-p-button">
           <a href="programme.html">Voir le programme</a>
         </button>
       </div>
-      <div class="col-4" class="h-programme-img">
-        <img
-          src="img/Repa/Repa-Asie.jpg?as=webp"
-          alt="photo d'un plat de sushi"
-        />
-      </div>
+      <div class="col-4 h-programme-img"></div>
     </div>
     <hr />
-    <div class="h-destination container row">
-      <div class="col-10">
+    <div class="h-destination">
+      <div class="h-destination-box">
         <div class="h-destination-card">
           <div class="country-polaroid">
             <div class="c.p.-description">
@@ -62,12 +57,9 @@
               <span class="c.p.-date">08.10</span>
             </div>
             <h3>Asie</h3>
-            <img
-              src="img/Festival/Photo-Asie.jpg?as=webp"
-              alt="photo d'un paysage d'asie"
-            />
-            <button><a href="">Voir le programme</a></button>
+            <div class="country-polaroid-img-asie"></div>
           </div>
+          <button><a href="">Voir le programme</a></button>
         </div>
         <div class="h-destination-card">
           <div class="country-polaroid">
@@ -76,12 +68,9 @@
               <span class="c.p.-date">09.10</span>
             </div>
             <h3>Europe</h3>
-            <img
-              src="img/Festival/Photo-Europe.jpg?as=webp"
-              alt="photo d'un paysage d'europe"
-            />
-            <button><a href="">Voir le programme</a></button>
+            <div class="country-polaroid-img-europe"></div>
           </div>
+          <button><a href="">Voir le programme</a></button>
         </div>
         <div class="h-destination-card">
           <div class="country-polaroid">
@@ -90,12 +79,9 @@
               <span class="c.p.-date">10.10</span>
             </div>
             <h3>Amérique latine</h3>
-            <img
-              src="img/Festival/Photo-AmeriqueLatine.jpg?as=webp"
-              alt="photo d'un paysage d'amérique latine"
-            />
-            <button><a href="">Voir le programme</a></button>
+            <div class="country-polaroid-img-amerique"></div>
           </div>
+          <button><a href="">Voir le programme</a></button>
         </div>
         <div class="h-destination-card">
           <div class="country-polaroid">
@@ -104,28 +90,27 @@
               <span class="c.p.-date">11.10</span>
             </div>
             <h3>Transculture</h3>
-            <img
-              src="img/Festival/Photo-Transculture.jpg?as=webp"
-              alt="photo d'un paysage de bord de mer"
-            />
-            <button><a href="">Voir le programme</a></button>
+            <div class="country-polaroid-img-transculture"></div>
           </div>
+          <button><a href="">Voir le programme</a></button>
         </div>
       </div>
     </div>
     <hr />
-    <div class="h-vod container row">
+    <div class="h-vod box">
       <div class="h-vod-content col-6">
         <h2>Le festival chez vous : Plateforme VOD</h2>
         <p>
           Avec notre plateforme VOD, revivez l’intégralité du festival depuis
           chez vous. Accédez à tous les films projetés en salle, ainsi qu’à une
           sélection exclusive de titres inédits, accompagnés de recettes à
-          recréer chez soi. Parfait pour : Les habitante·s hors région, les
-          familles, ou celles et ceux qui veulent prolonger l’expérience après
-          le festival.
+          recréer chez soi.
         </p>
-        <div class="h-vod-card row">
+        <p>
+          Parfait pour : Les habitante·s hors région, les familles, ou celles et
+          ceux qui veulent prolonger l’expérience après le festival.
+        </p>
+        <div class="h-vod-card-box row">
           <div class="vod-card col-2">
             <div class="vod-card-title">film vod</div>
             <div class="vod-card-text">
@@ -148,14 +133,15 @@
             </div>
           </div>
         </div>
-        <button><a href="">Voir les détails</a></button>
+        <button class="button-black"><a href="">Voir les détails</a></button>
       </div>
       <div class="h-vod-img col-4">
         <img src="img/Festival/Mockup_VOD.png?as=webp" alt="" />
       </div>
     </div>
-    <div class="h-partenaires container row">
-      <div class="col-10">
+    <div class="h-partenaires container row box">
+      <h2>nos partenaires :</h2>
+      <div class="col-10 h-partenaires-box">
         <img
           src="img/Logo/VilleBulle_Black.svg"
           alt="logo de la ville de bulle"
