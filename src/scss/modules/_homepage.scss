@@ -1,9 +1,13 @@
 .homepage {
-  padding-top: 15vh;
+  padding-top: 120px;
   #title-img {
     height: 50%;
     clip-path: inset(2% 0 25% 0);
     // margin: -25px 0px;
+  }
+
+  h1 {
+    padding: 0 30px;
   }
 
   p {
@@ -12,8 +16,17 @@
   }
 }
 
+.h-title-img {
+  background-image: url(../img/Festival/Cover-Festival.jpg);
+  background-size: cover;
+  width: 100vw;
+  height: 50vh;
+}
+
 .h-bienvenue {
   display: flex;
+  margin: 30px;
+  padding: 35px 0;
   h2 {
     font-family: "PP-Formula";
     font-size: 80px;
@@ -42,6 +55,7 @@
   justify-content: space-between;
   align-items: center;
   padding-left: 15px;
+  margin-bottom: 60px;
   .h-programme-text {
     display: flex;
     flex-direction: column;
@@ -63,16 +77,27 @@
 }
 
 .h-destination {
+  margin-bottom: 60px;
   .h-destination-box {
     display: flex;
     gap: 15px;
     padding: 30px;
+
     .h-destination-card {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      button {
+        align-self: flex-start;
+      }
+
       .country-polaroid {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+
         width: 411px;
         height: 493px;
         color: white;
@@ -114,24 +139,57 @@
           background-image: url(../img/Festival/Photo-Transculture.jpg);
         }
 
-        .c.p.-description {
+        .polaroid-description {
+          align-self: flex-start;
           display: flex;
           justify-content: space-between;
-          width: 20vw;
           span {
             font-family: "Helvetica-Neue";
-            width: 400;
             font-size: 20px;
           }
         }
       }
     }
   }
+
+  .h-destination-slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .h-destination-box {
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    gap: 15px;
+    padding: 30px;
+  }
+
+  .h-destination-button {
+    margin: 30px;
+  }
+
+  .slider-btn {
+    background: white;
+    border: 1px solid black;
+    padding: 15px 30px;
+    margin-left: 30px;
+    cursor: pointer;
+  }
+
+  .slider-prev {
+    left: 0;
+  }
+  .slider-next {
+    right: 0;
+  }
 }
 
 .h-vod {
   display: flex;
   padding: 30px;
+  margin-bottom: 60px;
   background-color: var(--black);
   color: white;
 
@@ -142,40 +200,54 @@
   .h-vod-content {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    padding-right: 30px;
     gap: 30px;
   }
-}
 
-.h-vod-card-box {
-  display: flex;
-  justify-content: space-around;
-  .vod-card {
+  .h-vod-img {
+    background-image: url(../img/Festival/Mockup_VOD.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 40vw;
+  }
+
+  button {
+    align-self: center;
+  }
+
+  .h-vod-card-box {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    background-color: white;
-    color: var(--black);
-    width: 18vw;
-    padding: 10px;
-
-    .vod-card-title {
-      font-family: "PP-Formula";
-      font-weight: 200;
-      font-size: 18px;
-      text-transform: uppercase;
-      text-align: center;
-    }
-
-    .vod-card-text {
+    justify-content: space-around;
+    .vod-card {
       display: flex;
-      justify-content: space-between;
-      font-size: 16px;
+      flex-direction: column;
+      gap: 10px;
+      background-color: white;
+      color: var(--black);
+      width: 18vw;
+      padding: 10px;
+
+      .vod-card-title {
+        font-family: "PP-Formula";
+        font-weight: 200;
+        font-size: 18px;
+        text-transform: uppercase;
+        text-align: center;
+      }
+
+      .vod-card-text {
+        display: flex;
+        justify-content: space-between;
+        font-size: 16px;
+      }
     }
   }
 }
 
 .h-partenaires {
   height: 290px;
+  margin-bottom: 60px;
   h2 {
     text-align: center;
     font-family: "PP-Formula";
@@ -189,9 +261,5 @@
   .h-partenaires-box {
     display: flex;
     justify-content: space-around;
-  }
-
-  img {
-    height: 3.5vw;
   }
 }

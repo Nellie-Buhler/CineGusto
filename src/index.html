@@ -9,14 +9,7 @@
   <header><include src="navigation.html"></include></header>
   <body class="homepage">
     <h1>Le premier festival suisse à <br />marier cinéma et gastronomie</h1>
-    <div>
-      <img
-        class="col-10"
-        id="title-img"
-        src="img/Festival/Cover-Festival.jpg?as=webp"
-        alt="photo d'une salle de cinéma"
-      />
-    </div>
+    <div class="h-title-img"></div>
     <div class="h-bienvenue box container row">
       <div class="col-4">
         <h2>Bienvenue</h2>
@@ -49,54 +42,84 @@
     </div>
     <hr />
     <div class="h-destination">
-      <div class="h-destination-box">
-        <div class="h-destination-card">
-          <div class="country-polaroid">
-            <div class="c.p.-description">
-              <p>Jour-01</p>
-              <span class="c.p.-date">08.10</span>
+      <div class="h-destination-button"></div>
+      <button class="slider-btn slider-prev">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="22"
+          viewBox="0 0 30 22"
+          fill="none"
+        >
+          <path
+            d="M14.9987 0L0 10.9987L14.9987 21.9975L14.9987 16.4981H29.9975V5.49937L14.9987 5.49937V0Z"
+            fill="black"
+          />
+        </svg>
+      </button>
+      <button class="slider-btn slider-next">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="22"
+          viewBox="0 0 30 22"
+          fill="none"
+        >
+          <path d="M15 0L30 11L15 22V16.5H0V5.5L15 5.5V0Z" fill="black" />
+        </svg>
+      </button>
+      <div class="h-destination-slider">
+        <div class="h-destination-box">
+          <div class="h-destination-card">
+            <div class="country-polaroid">
+              <div class="polaroid-description">
+                <p>Jour-01</p>
+                <span class="c.p.-date">08.10</span>
+              </div>
+              <h3>Asie</h3>
+              <div class="country-polaroid-img-asie"></div>
             </div>
-            <h3>Asie</h3>
-            <div class="country-polaroid-img-asie"></div>
+            <button><a href="asie.html">Voir le programme</a></button>
           </div>
-          <button><a href="asie.html">Voir le programme</a></button>
-        </div>
-        <div class="h-destination-card">
-          <div class="country-polaroid">
-            <div class="c.p.-description">
-              <p>Jour-02</p>
-              <span class="c.p.-date">09.10</span>
+          <div class="h-destination-card">
+            <div class="country-polaroid">
+              <div class="c.p.-description">
+                <p>Jour-02</p>
+                <span class="c.p.-date">09.10</span>
+              </div>
+              <h3>Europe</h3>
+              <div class="country-polaroid-img-europe"></div>
             </div>
-            <h3>Europe</h3>
-            <div class="country-polaroid-img-europe"></div>
+            <button><a href="">Voir le programme</a></button>
           </div>
-          <button><a href="">Voir le programme</a></button>
-        </div>
-        <div class="h-destination-card">
-          <div class="country-polaroid">
-            <div class="c.p.-description">
-              <p>Jour-03</p>
-              <span class="c.p.-date">10.10</span>
+          <div class="h-destination-card">
+            <div class="country-polaroid">
+              <div class="c.p.-description">
+                <p>Jour-03</p>
+                <span class="c.p.-date">10.10</span>
+              </div>
+              <h3>Amérique latine</h3>
+              <div class="country-polaroid-img-amerique"></div>
             </div>
-            <h3>Amérique latine</h3>
-            <div class="country-polaroid-img-amerique"></div>
+            <button><a href="">Voir le programme</a></button>
           </div>
-          <button><a href="">Voir le programme</a></button>
-        </div>
-        <div class="h-destination-card">
-          <div class="country-polaroid">
-            <div class="c.p.-description">
-              <p>Jour-04</p>
-              <span class="c.p.-date">11.10</span>
+          <div class="h-destination-card">
+            <div class="country-polaroid">
+              <div class="c.p.-description">
+                <p>Jour-04</p>
+                <span class="c.p.-date">11.10</span>
+              </div>
+              <h3>Transculture</h3>
+              <div class="country-polaroid-img-transculture"></div>
             </div>
-            <h3>Transculture</h3>
-            <div class="country-polaroid-img-transculture"></div>
+            <button><a href="">Voir le programme</a></button>
           </div>
-          <button><a href="">Voir le programme</a></button>
         </div>
       </div>
+
+      <hr />
     </div>
-    <hr />
+
     <div class="h-vod box">
       <div class="h-vod-content col-6">
         <h2>Le festival chez vous : Plateforme VOD</h2>
@@ -135,9 +158,7 @@
         </div>
         <button class="button-black"><a href="">Voir les détails</a></button>
       </div>
-      <div class="h-vod-img col-4">
-        <img src="img/Festival/Mockup_VOD.png?as=webp" alt="" />
-      </div>
+      <div class="h-vod-img col-4"></div>
     </div>
     <div class="h-partenaires container row box">
       <h2>nos partenaires :</h2>

@@ -49,3 +49,14 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+// Dropdown Slider homepage
+const box = document.querySelector(".h-destination-box");
+
+document.querySelector(".slider-prev").addEventListener("click", () => {
+  box.scrollBy({ left: -430, behavior: "smooth" });
+});
+
+document.querySelector(".slider-next").addEventListener("click", () => {
+  box.scrollBy({ left: 430, behavior: "smooth" });
+});
