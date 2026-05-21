@@ -40,3 +40,12 @@ document.querySelectorAll(".b-dropdown-box").forEach((box) => {
     box.classList.toggle("active");
   });
 });
+
+// Dropdown FAQ footer
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".ffaq-dropdown-box").forEach((box) => {
+    box.querySelector(".ffaq-dropdown-button").addEventListener("click", () => {
+      box.classList.toggle("active");
+    });
+  });
+});

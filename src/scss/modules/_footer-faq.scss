@@ -1,0 +1,61 @@
+.footer-faq {
+  display: flex;
+  align-items: start;
+  width: 100vw;
+  padding-bottom: 60px;
+
+  .ffaq-part01 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+
+    .ffaq-img {
+      height: 20vw;
+      background-image: url(../img/Festival/CinemaPrado.jpg);
+      background-size: cover;
+      border: 1px solid white;
+    }
+
+    button {
+      align-self: center;
+      border: 1px solid white;
+      background-color: var(--Black);
+
+      a {
+        color: white;
+      }
+    }
+
+    button:hover {
+      border: 1px solid white;
+      background-color: white;
+
+      a,
+      p {
+        color: var(--black);
+      }
+    }
+  }
+
+  .ffaq-part02 {
+    .ffaq-dropdown-button {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      //   margin-bottom: 15px;
+    }
+
+    .ffaq-dropdown-content {
+      display: none;
+    }
+
+    .ffaq-dropdown-box.active .ffaq-dropdown-content {
+      display: block;
+    }
+
+    .ffaq-dropdown-box.active .b-dropdown-arrow svg {
+      transform: rotate(180deg);
+    }
+  }
+}

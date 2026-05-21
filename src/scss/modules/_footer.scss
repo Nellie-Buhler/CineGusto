@@ -14,6 +14,7 @@
   display: flex;
   justify-content: space-between;
   gap: 30px;
+  margin: 30px 0;
 
   .f-newsletter {
     display: flex;
@@ -62,15 +63,18 @@
 .f-part-02 {
   display: flex;
   justify-content: space-between;
+  height: 40vh;
+  margin-top: 30px;
 
   .f-nav {
     display: flex;
     gap: 20px;
+    margin-right: 120px;
     .f-nav-content {
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
-      gap: 15px;
+
+      gap: 30px;
 
       a {
         font-family: "Helvetica Neue";
@@ -88,10 +92,20 @@
     .f-contact-text {
       display: flex;
       gap: 30px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+      span {
+        font-size: 18px;
+        font-weight: 500;
+      }
     }
 
     .f-contact-carte {
-      width: 50vw;
+      .f-carte {
+        width: 55vw;
+        height: 25vh;
+      }
     }
   }
 }
