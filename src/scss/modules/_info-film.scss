@@ -1,0 +1,51 @@
+.info-films {
+  height: 100vh;
+}
+
+.i.f-text {
+  background-color: white;
+  color: white;
+}
+
+.i.f-content {
+  background-color: var(--black);
+
+  .i.f-content-title {
+    display: flex;
+    justify-content: space-between;
+    h1 {
+      color: var(--white);
+      font-feature-settings: "ss01" on;
+      font-family: "PP Formula";
+      font-size: 60px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    p {
+      color: var(--white, #fff);
+      font-family: "Helvetica Neue";
+      font-size: 22px;
+      font-weight: 500;
+    }
+  }
+}
+
+.button-back-w {
+  align-self: flex-start;
+  padding: 15px;
+  background-color: white;
+  border: 1px solid var(--Black);
+  transition: 0.5s;
+  svg {
+    fill: var(--Black);
+  }
+}
+
+.button-back-w:hover {
+  background-color: var(--Black);
+  border: 1px solid var(--Black);
+  svg {
+    fill: white;
+  }
+}
