@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="scss/main.scss" />
   </head>
   <header><include src="navigation.html"></include></header>
-  <body class="info-films container row">
-    <div class="i.f-text col-4">
+  <body class="info-film row">
+    <div class="i-text col-4">
       <button class="button-back-w" onclick="history.back()">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -21,14 +21,14 @@
           />
         </svg>
       </button>
-      <div class="i.f-text-info-box">
-        <div class="i.f-text-info">
-          <div class="i.f-hour"><p>14h00</p></div>
-          <div class="i.f-cinema"><p>salle ébullition</p></div>
+      <div class="i-seances">
+        <div class="i-seances-card">
+          <div class="i-seances-hour"><p>14h00</p></div>
+          <div class="i-seances-cinema"><p>salle ébullition</p></div>
         </div>
-        <div class="i.f-text-info">
-          <div class="i.f-hour"><p>14h00</p></div>
-          <div class="i.f-cinema"><p>salle ébullition</p></div>
+        <div class="i-seances-card">
+          <div class="i-seances-hour"><p>16h30</p></div>
+          <div class="i-seances-cinema"><p>Cinéma le prado</p></div>
         </div>
       </div>
       <p>
@@ -37,37 +37,31 @@
         des sushis. On ne choisit pas. Il en sert vingt par tête, pour la somme
         de 30,000 yens. Pour y manger, il faut réserver plusieurs mois à
         l’avance. On n’a quand même pas trois étoiles au Michelin sans raison
-        (cfL’Aile ou la Cuisse)! <br />
-        Il retrouve ses cinq qualités chez Jiro, qui l’intimide encore
-        aujourd’hui. Il faut dire que le maître inspire le plus profond respect.
-        Chez lui, on n’est jamais déçu. À ce niveau de qualité, on peut parler
-        d’art et de dévotion. Il a fait ce métier toute sa vie. Les sushis. Il
-        pense shushis, il rêve même qu’il fait des sushis la nuit. Les vacances
-        lui sont toujours trop longues.
+        (cf L’Aile ou la Cuisse)!
       </p>
-      <button>
-        <a href="https://www.ticketcorner.ch/fr/">Prendre un billet</a>
-      </button>
+      <button id="i-button">Prendre un billet</button>
     </div>
-    <div class="i.f-content col-5">
-      <div class="i.f-content-title">
+    <div class="i-content col-6">
+      <div class="i-content-title">
         <h1>Jiro Dreams of Sushi</h1>
         <p>David Gelb</p>
       </div>
-      <div class="i.f-content-img">
+      <div class="i-content-img">
         <img
           src="img/Film/Extrait-JiroSushi.webp"
           alt="extrait du film jiro dream of sushi"
         />
       </div>
-      <div class="i.f-content-clasification">
+      <div class="i-content-data">
         <p>2011</p>
         <p>états-unis</p>
         <p>documentaire</p>
         <p>81 minute</p>
       </div>
     </div>
+    <div class="i-content"></div>
     <script src="js/main.js"></script>
   </body>
+
   <footer><extends src="footer.html"></extends></footer>
 </html>
