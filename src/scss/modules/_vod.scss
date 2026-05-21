@@ -1,0 +1,80 @@
+.vod {
+  margin-top: 120px;
+
+  h1 {
+    margin: 0 30px;
+  }
+
+  .v-text {
+    p {
+      font-family: "Helvetica Neue";
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+    }
+  }
+
+  .v-img {
+    width: 24vw;
+    height: 32vw;
+    background-image: url(../img/Festival/Mockup_VOD.png);
+    background-size: cover;
+  }
+}
+
+.v-intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+
+  .v-text {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+}
+
+.v-vod-card-box {
+  display: flex;
+  justify-content: space-around;
+  .vod-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--black);
+    color: white;
+    width: 18vw;
+    padding: 10px;
+    font-family: "Helvetica Neue";
+    font-size: 18px;
+    font-weight: 400;
+
+    .vod-card-title {
+      font-family: "PP-Formula";
+      font-weight: 200;
+      font-size: 18px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    .vod-card-text {
+      display: flex;
+      justify-content: space-between;
+      font-size: 16px;
+    }
+  }
+}
+
+.v-download-box {
+  padding: 30px;
+  .v-download {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 0;
+
+    img {
+      height: 5vw;
+    }
+  }
+}
