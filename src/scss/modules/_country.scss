@@ -1,10 +1,211 @@
 .c-intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--black);
   color: white;
-  padding-top: 150px;
+  margin-top: 150px;
+  padding: 15px;
+  width: 100vw;
+  padding: 30px;
 
-  .c-asie {
-    background-image: url(../img/Festival/Timbre-Asie.jpg);
-    height: 20px;
+  .c-part01 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    h1 {
+      color: #fff;
+      font-feature-settings: "ss01" on;
+      font-family: "PP Formula";
+      font-size: 100px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 90px;
+      letter-spacing: -4px;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-family: "Helvetica Neue";
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+    }
+
+    .c-intro-date {
+      display: flex;
+      justify-content: space-between;
+      p {
+        font-feature-settings: "ss01" on;
+        font-family: "PP Formula";
+        font-size: 45px;
+        font-weight: 500;
+        letter-spacing: -1.2px;
+        text-transform: uppercase;
+      }
+    }
   }
+
+  .c-part02 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      height: 50vw;
+    }
+  }
+
+  .button-back {
+    align-self: flex-start;
+    padding: 15px;
+    background-color: var(--Black);
+    border: 1px solid white;
+    transition: 0.5s;
+    svg {
+      fill: white;
+    }
+  }
+
+  .button-back:hover {
+    background-color: white;
+    border: 1px solid var(--Black);
+    svg {
+      fill: var(--Black);
+    }
+  }
+
+  .c-info-box {
+    display: flex;
+    justify-content: space-between;
+
+    .c-info-card {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      h3 {
+        font-family: "PP Formula";
+        font-feature-settings: "ss01" on;
+        font-size: 18px;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding: 0px 15px;
+        padding-top: 15px;
+      }
+
+      p {
+        font-family: "Helvetica-Neue";
+        font-size: 18px;
+        font-weight: 300;
+        padding: 0px 15px;
+        padding-bottom: 15px;
+      }
+
+      .c-box-card {
+        border: 1px solid white;
+        width: 15vw;
+      }
+
+      .c-info-card-img {
+        border: 1px solid white;
+        height: 120px;
+        margin: 0;
+      }
+    }
+  }
+}
+
+.c-programme {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+
+  .c-hour {
+    border: 1px solid var(--black);
+    padding: 15px 120px;
+    align-self: flex-start;
+    color: var(--Black, #1b1a18);
+    text-align: center;
+    font-family: "PP Formula";
+    font-size: 26px;
+    font-weight: 500;
+  }
+
+  .c-movie-box {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid var(--black);
+    padding: 30px 30px;
+  }
+
+  .c-movie-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: var(--black);
+    color: white;
+    width: 30vw;
+    height: 34vw;
+
+    img {
+      height: 26vw;
+      padding: 15px;
+    }
+
+    h4 {
+      color: var(--white, #fff);
+      font-family: "PP Formula";
+      font-feature-settings: "ss01" on;
+      font-size: 30px;
+      font-weight: 400;
+      margin: 15px;
+    }
+
+    .c-movie-card-info {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 15px;
+      color: var(--white, #fff);
+      font-family: "Helvetica Neue";
+      font-size: 16px;
+      font-weight: 400;
+      text-transform: capitalize;
+
+      span {
+        font-size: 18px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .c-movie-card-right {
+    transition: transform 0.5s;
+  }
+  .c-movie-card-right:hover {
+    transform: rotate(6deg);
+  }
+
+  .c-movie-card-middle {
+    transition: transform 0.5s;
+  }
+  .c-movie-card-middle:hover {
+    transform: rotate(-7deg);
+  }
+  .c-movie-card-left {
+    transition: transform 0.5s;
+  }
+  .c-movie-card-left:hover {
+    transform: rotate(5deg);
+  }
+}
+
+.c-asie-film {
+  background-image: url(../img/Film/Extrait-JiroSushi.webp);
+  background-size: cover;
+}
+
+.c-asie-menu {
+  background-image: url(../img/Repa/Repa-Asie.jpg);
+  background-size: cover;
 }

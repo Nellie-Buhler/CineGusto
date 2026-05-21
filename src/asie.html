@@ -7,9 +7,9 @@
   </head>
   <header><include src="navigation.html"></include></header>
   <body class="country">
-    <div class="c-intro container row">
+    <div class="c-intro">
       <div class="c-part01 col-4">
-        <div class="button-back">
+        <button class="button-back" onclick="history.back()">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="32"
@@ -19,10 +19,9 @@
           >
             <path
               d="M15.9987 0L0 15.9987L15.9987 31.9975L15.9987 23.9981H31.9975V7.99937L15.9987 7.99937V0Z"
-              fill="white"
             />
           </svg>
-        </div>
+        </button>
         <div class="c-intro-text">
           <h1>asie</h1>
           <hr />
@@ -39,36 +38,35 @@
             <p>Jour-01</p>
             <p>08.09</p>
           </div>
-          <div class="c-info-card">
-            <div class="box-black">
-              <h3>à l’honneur</h3>
-              <p>Jiro Dreams of Sushi</p>
-              <img
-                src="img/Film/Extrait-JiroSushi.webp"
-                alt="etrait du film jiro dreams of sushi"
-              />
+          <div class="c-info-box">
+            <div class="c-info-card">
+              <div class="c-box-card">
+                <h3>à l’honneur</h3>
+                <p>Jiro Dreams of Sushi</p>
+                <div class="c-info-card-img c-asie-film"></div>
+              </div>
+              <button><a href="">Aller voir</a></button>
             </div>
             <div class="c-info-card">
-              <div class="box-black">
+              <div class="c-box-card">
                 <h3>Au menu</h3>
                 <p>Sushi omakase revisité</p>
-                <img
-                  src="img/Repa/Repa-Asie.jpg?as=webp"
-                  alt="etrait du film jiro dreams of sushi"
-                />
+                <div class="c-info-card-img c-asie-menu"></div>
               </div>
               <button><a href="">Aller voir</a></button>
             </div>
           </div>
         </div>
       </div>
-      <div class="c-part02 c-asie col-6"></div>
+      <div class="c-part02 col-6">
+        <img src="img/Festival/Timbre-Asie.jpg" alt="" />
+      </div>
     </div>
 
     <div class="c-programme">
       <div class="c-hour"><p>14h00</p></div>
       <div class="c-movie-box">
-        <div class="c-movie-card">
+        <div class="c-movie-card c-movie-card-left">
           <img
             src="img/Film/Affiche-VoyageChihiro.png?as=webp"
             alt="affiche du film le voyage de chihiro"
@@ -79,27 +77,27 @@
           </div>
           <h4>Le Voyage de Chihiro</h4>
         </div>
-        <div class="c-movie-card">
+        <div class="c-movie-card c-movie-card-middle">
           <img
-            src="img/Film/Affiche-VoyageChihiro.png?as=webp"
-            alt="affiche du film le voyage de chihiro"
+            src="img/Film/Affiche-JiroSushi.png?as=webp"
+            alt="affiche du film jiro dream of sushi"
           />
           <div class="c-movie-card-info">
-            <p>Japon, 2001</p>
-            <span>Cinéma Le Prado</span>
+            <p>États-Unis, 2011</p>
+            <span>Salle Ébullition</span>
           </div>
-          <h4>Le Voyage de Chihiro</h4>
+          <h4>Jiro Dreams of Sushi</h4>
         </div>
-        <div class="c-movie-card">
+        <div class="c-movie-card c-movie-card-right">
           <img
-            src="img/Film/Affiche-VoyageChihiro.png?as=webp"
+            src="img/Film/Affiche-EatDrinkWoman.png?as=webp"
             alt="affiche du film le voyage de chihiro"
           />
           <div class="c-movie-card-info">
-            <p>Japon, 2001</p>
-            <span>Cinéma Le Prado</span>
+            <p>Taïwan, 1994</p>
+            <span>Salle CO2</span>
           </div>
-          <h4>Le Voyage de Chihiro</h4>
+          <h4>Eat Drink Man Woman</h4>
         </div>
       </div>
     </div>
