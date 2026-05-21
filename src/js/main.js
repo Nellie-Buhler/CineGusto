@@ -33,3 +33,10 @@ document.querySelectorAll(".dropdown").forEach((dropdown) => {
     dropdown.querySelector(".nav-btn").classList.toggle("open");
   });
 });
+
+// Dropdown billeterie
+document.querySelectorAll(".b-dropdown-box").forEach((box) => {
+  box.querySelector(".b-dropdown-button").addEventListener("click", () => {
+    box.classList.toggle("active");
+  });
+});

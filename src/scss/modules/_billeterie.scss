@@ -1,0 +1,140 @@
+.billeterie {
+  margin-top: 120px;
+
+  .b-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 30px;
+    height: 60vh;
+
+    h2 {
+      font-family: "PP Formula";
+      font-size: 30px;
+      font-weight: 400;
+    }
+
+    p {
+      font-family: "Helvetica Neue";
+      font-size: 18px;
+      font-weight: 400;
+    }
+
+    button {
+      align-self: center;
+    }
+  }
+}
+
+.b-info {
+  padding: 60px 30px;
+  background-color: var(--black);
+
+  .b-info-title {
+    position: absolute;
+    color: white;
+    border: 1px solid white;
+    padding: 15px 60px;
+    margin-bottom: 30px;
+    width: 30vw;
+
+    h2 {
+      font-family: "PP Formula";
+      font-size: 26px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.b-info-dropdown-container {
+  margin-top: 120px;
+}
+
+.b-info-dropdown {
+  .b-dropdown-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .b-dropdown-button {
+      background-color: white;
+      display: flex;
+      justify-content: center;
+
+      .b-dropdown-button-txt {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 70vw;
+        padding: 5px 30px;
+        border: 1px solid var(--black);
+      }
+
+      .b-dropdown-arrow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 10vw;
+        padding: 15px 30px;
+        border: 1px solid var(--black);
+      }
+
+      p {
+        font-feature-settings: "ss01" on;
+        font-family: "PP Formula";
+        font-size: 26px;
+        font-weight: 500;
+        // text-transform: uppercase;
+      }
+    }
+
+    .b-dropdown-content {
+      // display: flex;
+      // justify-content: center;
+      background-color: white;
+      align-items: center;
+      border: 1px solid black;
+      width: 80vw;
+      button {
+        width: 20vw;
+      }
+
+      .b-description {
+        width: 60vw;
+        border-right: 1px solid var(--black);
+        padding: 15px 30px;
+        h4 {
+          font-family: "Helvetica Neue";
+          font-size: 22px;
+          font-style: normal;
+          font-weight: 500;
+        }
+
+        p {
+          font-family: "Helvetica Neue";
+          font-size: 18px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+
+.b-dropdown-content {
+  display: none;
+}
+
+.b-dropdown-box.active .b-dropdown-content {
+  display: flex;
+}
+
+.b-dropdown-arrow svg {
+  transition: transform 0.3s ease;
+}
+
+.b-dropdown-box.active .b-dropdown-arrow svg {
+  transform: rotate(180deg);
+}
