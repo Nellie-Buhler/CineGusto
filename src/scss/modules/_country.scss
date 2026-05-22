@@ -55,6 +55,17 @@
       height: 50vw;
     }
   }
+  @media (max-width: 768px) {
+    .c-part01 {
+      .c-intro-text,
+      .c-intro-date {
+        display: none;
+      }
+    }
+    .c-part02 {
+      display: none;
+    }
+  }
 
   .button-back {
     align-self: flex-start;
@@ -115,7 +126,34 @@
     }
   }
 }
+@media (max-width: 768px) {
+  .c-info-box {
+    width: 100vw;
+    .c-info-card {
+      width: 40vw;
+      h3 {
+        font-size: 16px;
+        padding: 0px 15px;
+        padding-top: 15px;
+      }
 
+      p {
+        font-size: 14px;
+        padding: 0px 15px;
+        padding-bottom: 15px;
+      }
+
+      .c-box-card {
+        width: 18vw;
+      }
+
+      .c-info-card-img {
+        height: 120px;
+        margin: 0;
+      }
+    }
+  }
+}
 .c-programme {
   display: flex;
   flex-direction: column;

@@ -125,3 +125,72 @@
     fill: white;
   }
 }
+@media (max-width: 768px) {
+  .i-text {
+    gap: 50px;
+    padding: 100px 30px;
+
+    .i-seances {
+      .i-seances-card {
+        p {
+          font-family: "PP Formula";
+          font-size: 14px;
+          font-weight: 500;
+        }
+
+        .i-seances-cinema {
+          width: 55vw;
+        }
+
+        .i-seances-hour {
+          width: 30vw;
+        }
+      }
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .i-content {
+    background-color: var(--black);
+    color: white;
+    padding: 0 30px;
+    padding-top: 30px;
+    height: 45vh;
+
+    .i-content-title {
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding-bottom: 15px;
+      h1 {
+        font-size: 28px;
+        font-weight: 500;
+        letter-spacing: 0px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+
+    .i-content-img {
+      img {
+        height: 52vw;
+      }
+    }
+
+    .i-content-data {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding-top: 15px;
+      color: var(--white, #fff);
+      font-family: "Helvetica Neue";
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+}
