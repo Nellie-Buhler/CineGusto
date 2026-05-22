@@ -1,5 +1,5 @@
 .vod {
-  margin-top: 120px;
+  margin-top: 180px;
 
   h1 {
     margin: 0 30px;
@@ -75,6 +75,11 @@
 
     img {
       height: 5vw;
+      transition: 0.5s;
+    }
+
+    img:hover {
+      filter: opacity(75%);
     }
   }
 }

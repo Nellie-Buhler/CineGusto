@@ -44,6 +44,10 @@
     font-size: 20px;
   }
 
+  #i-button:hover {
+    color: white;
+  }
+
   p {
     color: #000;
     font-family: "Helvetica Neue";
@@ -60,7 +64,6 @@
   padding: 0 30px;
   padding-top: 18vh;
   height: 100vh;
-  border: 1px solid white;
 
   .i-content-title {
     display: flex;

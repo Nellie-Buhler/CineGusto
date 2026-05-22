@@ -22,13 +22,15 @@
 
     button {
       align-self: center;
+      padding: 15px 30px;
     }
   }
 }
 
 .b-info {
-  padding: 60px 30px;
+  padding: 120px 30px;
   background-color: var(--black);
+  border-bottom: 1px solid white;
 
   .b-info-title {
     position: absolute;

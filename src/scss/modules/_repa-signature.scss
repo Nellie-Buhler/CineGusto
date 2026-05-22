@@ -2,6 +2,42 @@
   background-color: var(--black);
   width: 100vw;
 
+  .s-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    padding-top: 100px;
+    width: 98vw;
+
+    .button-back {
+      align-self: flex-start;
+      padding: 15px;
+      background-color: var(--Black);
+      border: 1px solid white;
+      transition: 0.5s;
+      svg {
+        fill: white;
+      }
+    }
+
+    .button-back:hover {
+      background-color: white;
+      border: 1px solid var(--Black);
+      svg {
+        fill: var(--Black);
+      }
+    }
+
+    span {
+      color: white;
+      font-family: "PP Formula";
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 400;
+    }
+  }
+
   .s-part01 {
     display: flex;
     justify-content: space-between;
@@ -95,11 +131,16 @@
 .s-nav {
   display: flex;
   justify-content: center;
-  padding-top: 150px;
 
   .tab-principal {
     width: 45vw;
     padding: 15px;
     margin: -3px;
   }
+}
+
+.tab-principal.active {
+  background-color: white;
+  color: var(--black);
+  border: 1px solid white;
 }
