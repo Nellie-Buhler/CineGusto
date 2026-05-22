@@ -83,3 +83,66 @@
     }
   }
 }
+
+.v-img-mobile {
+  display: none;
+  background-image: url(../img/Festival/Mockup_VOD.png);
+  background-size: cover;
+  height: 30vh;
+  width: 35vw;
+}
+
+@media (max-width: 768px) {
+  .vod {
+    margin-top: 120px;
+
+    h1 {
+      letter-spacing: -1px;
+    }
+
+    .v-text {
+      p {
+        font-size: 16px;
+      }
+    }
+
+    .v-img {
+      display: none;
+    }
+  }
+
+  .v-download-container {
+    display: flex;
+    justify-content: space-between;
+
+    .v-img-mobile {
+      display: block;
+    }
+
+    .v-vod-card-box {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      .vod-card {
+        width: 45vw;
+
+        .vod-card-title {
+          font-size: 16px;
+        }
+
+        .vod-card-text {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .v-download-box {
+    padding: 30px;
+    .v-download {
+      img {
+        height: 10vw;
+      }
+    }
+  }
+}
