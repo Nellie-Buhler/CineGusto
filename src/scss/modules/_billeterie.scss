@@ -140,3 +140,77 @@
 .b-dropdown-box.active .b-dropdown-arrow svg {
   transform: rotate(180deg);
 }
+@media (max-width: 768px) {
+  .billeterie {
+    margin-top: 90px;
+    h1 {
+      letter-spacing: -1px;
+    }
+    .b-intro {
+      h2 {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .b-info {
+    padding: 120px 30px;
+
+    .b-info-title {
+      padding: 15px 30px;
+      width: 60vw;
+
+      h2 {
+        font-size: 26px;
+      }
+    }
+  }
+
+  .b-info-dropdown-container {
+    margin-top: 120px;
+  }
+
+  .b-info-dropdown {
+    .b-dropdown-box {
+      .b-dropdown-button {
+        .b-dropdown-button-txt {
+          width: 72vw;
+          padding: 0px 15px;
+          border: 1px solid var(--black);
+        }
+
+        .b-dropdown-arrow {
+          width: 18vw;
+          padding: 15px 15px;
+        }
+
+        p {
+          font-size: 14px;
+        }
+      }
+
+      .b-dropdown-content {
+        width: 90vw;
+        button {
+          width: 20vw;
+        }
+
+        .b-description {
+          width: 70vw;
+          padding: 15px 15px;
+          h4 {
+            font-size: 18px;
+          }
+
+          p {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
