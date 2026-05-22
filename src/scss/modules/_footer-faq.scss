@@ -43,7 +43,6 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      //   margin-bottom: 15px;
     }
 
     .ffaq-dropdown-content {
@@ -56,6 +55,22 @@
 
     .ffaq-dropdown-box.active .b-dropdown-arrow svg {
       transform: rotate(180deg);
+    }
+  }
+}
+@media (max-width: 768px) {
+  .footer-faq {
+    .ffaq-part01 {
+      margin-bottom: 30px;
+      .ffaq-img {
+        height: 60vw;
+      }
+
+      button {
+        a {
+          padding: 15px;
+        }
+      }
     }
   }
 }
