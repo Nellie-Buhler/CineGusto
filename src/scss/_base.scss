@@ -83,13 +83,6 @@ video {
   display: block;
   height: 50px;
 }
-@media (max-width: 768px) {
-  img,
-  video {
-    display: block;
-    height: 25px;
-  }
-}
 
 .row + .row {
   margin-top: 16px;
@@ -115,7 +108,9 @@ h1 {
   font-feature-settings: "ss01" on;
 
   @media (max-width: 768px) {
-    letter-spacing: -1px;
+    h1 {
+      letter-spacing: -1px;
+    }
   }
 }
 
