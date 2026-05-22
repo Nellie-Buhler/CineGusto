@@ -1,10 +1,5 @@
 .homepage {
   padding-top: 120px;
-  #title-img {
-    height: 50%;
-    clip-path: inset(2% 0 25% 0);
-    // margin: -25px 0px;
-  }
 
   h1 {
     padding: 0 30px;
@@ -20,13 +15,21 @@
   background-image: url(../img/Festival/Cover-Festival.jpg);
   background-size: cover;
   width: 100vw;
-  height: 50vh;
+  height: 32vw;
+}
+@media (max-width: 768px) {
+  .h-title-img {
+    background-size: cover;
+    background-position: 50%;
+    height: 50vw;
+  }
 }
 
 .h-bienvenue {
   display: flex;
   margin: 30px;
-  padding: 35px 0;
+  padding: 0;
+
   h2 {
     font-family: "PP-Formula";
     font-size: 80px;
@@ -38,15 +41,17 @@
     padding-top: 15px;
   }
 
-  .h-bienvenu-line {
-    background-color: var(--black);
-    width: 1px;
-  }
-
   div {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  @media (max-width: 768px) {
+    h2 {
+      letter-spacing: -1px;
+      font-size: 30px;
+    }
   }
 }
 
@@ -56,11 +61,12 @@
   align-items: center;
   padding-left: 15px;
   margin-bottom: 60px;
+
   .h-programme-text {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 30px;
+    gap: 15px;
 
     button {
       align-self: flex-start;
@@ -68,11 +74,20 @@
   }
 
   .h-programme-img {
-    background-image: url(../img/Repa/Repa-Asie.jpg);
-    background-size: cover;
-    height: 23vw;
-    width: 35vw;
-    clip-path: inset(0 14% 0 14%);
+    display: flex;
+    justify-content: flex-end;
+    img {
+      height: 24vw;
+    }
+  }
+  @media (max-width: 768px) {
+    .h-programme-img {
+      justify-content: center;
+      margin-bottom: 15px;
+      img {
+        height: 80vw;
+      }
+    }
   }
 }
 
@@ -188,6 +203,51 @@
     right: 0;
   }
 }
+@media (max-width: 768px) {
+  .h-destination {
+    .h-destination-box {
+      .h-destination-card {
+        .country-polaroid {
+          width: 311px;
+          height: 393px;
+
+          h3 {
+            font-weight: 400;
+            font-size: 36px;
+          }
+
+          .country-polaroid-img-amerique {
+            width: 293px;
+            height: 277px;
+          }
+
+          .country-polaroid-img-asie {
+            width: 293px;
+            height: 277px;
+          }
+
+          .country-polaroid-img-europe {
+            width: 293px;
+            height: 277px;
+          }
+
+          .country-polaroid-img-transculture {
+            width: 293px;
+            height: 277px;
+          }
+
+          .polaroid-description {
+            width: 311px;
+            padding: 0 15px;
+            span {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
 .h-vod {
   display: flex;
@@ -214,6 +274,29 @@
     background-repeat: no-repeat;
     height: 40vw;
   }
+  @media (max-width: 768px) {
+    .h-vod-img {
+      display: none;
+    }
+  }
+
+  .h-vod-card-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .h-vod-img-mobile {
+    display: none;
+    background-image: url(../img/Festival/Mockup_VOD.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60vw;
+  }
+  @media (max-width: 768px) {
+    .h-vod-img-mobile {
+      display: block;
+    }
+  }
 
   button {
     align-self: center;
@@ -222,13 +305,14 @@
   .h-vod-card-box {
     display: flex;
     justify-content: space-around;
+    gap: 15px;
     .vod-card {
       display: flex;
       flex-direction: column;
       gap: 10px;
       background-color: white;
       color: var(--black);
-      width: 18vw;
+      width: 16vw;
       padding: 10px;
 
       .vod-card-title {
@@ -243,6 +327,17 @@
         display: flex;
         justify-content: space-between;
         font-size: 16px;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .h-vod-card-box {
+      flex-direction: column;
+      gap: 15px;
+
+      .vod-card {
+        width: 45vw;
       }
     }
   }
@@ -264,5 +359,25 @@
   .h-partenaires-box {
     display: flex;
     justify-content: space-around;
+  }
+
+  @media (max-width: 768px) {
+    h2 {
+      letter-spacing: -1px;
+      font-weight: 500;
+      line-height: 60px;
+      font-feature-settings: "ss01" on;
+    }
+
+    .h-partenaires-box {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: -60px;
+    }
+
+    img {
+      display: block;
+      height: 25px;
+    }
   }
 }
