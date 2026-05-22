@@ -140,9 +140,12 @@
         }
 
         .polaroid-description {
-          align-self: flex-start;
+          // align-self: flex-start;
           display: flex;
           justify-content: space-between;
+          align-items: center;
+          width: 411px;
+          padding: 0 15px;
           span {
             font-family: "Helvetica-Neue";
             font-size: 20px;
