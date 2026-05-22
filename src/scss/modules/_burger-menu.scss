@@ -1,0 +1,64 @@
+#burger-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  height: 70px;
+  width: 70px;
+  margin: 30px;
+  overflow: visible;
+  position: fixed;
+  right: 0;
+  z-index: 100;
+  background-color: white;
+  border: 1px solid var(--black);
+  cursor: pointer;
+
+  div {
+    background: var(--black);
+    width: 50px;
+    height: 8px;
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+  }
+
+  &.close {
+    .ligne-01 {
+      transform: translateY(11px) rotate(45deg);
+    }
+    .ligne-02 {
+      opacity: 0;
+    }
+    .ligne-03 {
+      transform: translateY(-11px) rotate(-45deg);
+    }
+  }
+}
+
+#burger-menu {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: var(--pink);
+  z-index: 99;
+  padding-top: 100px;
+  opacity: 0;
+  pointer-events: none; // invisible ET non-cliquable
+  transition: opacity 0.3s ease;
+
+  &.active {
+    display: block;
+  }
+
+  a {
+    display: block;
+    color: white;
+    font-size: 40px;
+    padding: 20px 40px;
+    text-decoration: none;
+  }
+}

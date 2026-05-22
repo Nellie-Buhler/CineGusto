@@ -120,3 +120,9 @@
 .nav-btn.open .arrow svg {
   transform: rotate(180deg);
 }
+
+@media (max-width: 768px) {
+  .n-link {
+    display: none;
+  }
+}

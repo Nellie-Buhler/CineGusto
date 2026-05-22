@@ -1,3 +1,4 @@
+import gsap from "gsap";
 // Onglets programme
 document.querySelectorAll(".tab-principal").forEach((tab) => {
   tab.addEventListener("click", () => {
@@ -59,4 +60,9 @@ document.querySelector(".slider-prev").addEventListener("click", () => {
 
 document.querySelector(".slider-next").addEventListener("click", () => {
   box.scrollBy({ left: 430, behavior: "smooth" });
+});
+
+document.getElementById("burger-button").addEventListener("click", function () {
+  this.classList.toggle("close");
+  document.getElementById("burger-menu").classList.toggle("active");
 });

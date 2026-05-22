@@ -11,6 +11,24 @@
   color: white;
 }
 
+@media (max-width: 768px) {
+  .p-nav {
+    gap: 30px;
+    flex-direction: column;
+
+    .tabs {
+      display: flex;
+      justify-content: space-between;
+
+      button {
+        margin: 0;
+        padding: 15px 40px;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
 .p-button-black {
   background-color: var(--black);
   border: 1px solid white;
@@ -110,6 +128,68 @@
   .d-img-transculture {
     background-image: url(../img/Festival/Timbre-Transculture.jpg);
   }
+
+  .d-img-asie-mobile {
+    background-image: url(../img/Festival/Timbre-Asie.jpg);
+  }
+
+  .d-img-europe-mobile {
+    background-image: url(../img/Festival/Timbre-Europe.jpg);
+  }
+
+  .d-img-amerique-mobile {
+    background-image: url(../img/Festival/Timbre-AmeriqueLatine.jpg);
+  }
+
+  .d-img-transculture-mobile {
+    background-image: url(../img/Festival/Timbre-Transculture.jpg);
+  }
+  .d-img-transculture-mobile {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .d-card {
+    .d-card-text {
+      gap: 15px;
+      h2 {
+        font-size: 40px;
+        line-height: 50px;
+        letter-spacing: -3px;
+        padding-top: 15px;
+        padding-bottom: 0px;
+      }
+      .d-card-text-info {
+        font-size: 22px;
+      }
+      .d-card-text-content {
+        width: 100%;
+        h3 {
+          font-size: 18px;
+        }
+
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+    .d-img-asie-mobile,
+    .d-img-europe-mobile,
+    .d-img-amerique-mobile,
+    .d-img-transculture-mobile {
+      display: block;
+      align-self: center;
+      background-size: cover;
+      width: 50vw;
+      height: 50vw;
+    }
+    .d-img-asie,
+    .d-img-europe,
+    .d-img-amerique,
+    .d-img-transculture {
+      display: none;
+    }
+  }
 }
 
 .r-card {
@@ -124,6 +204,16 @@
     justify-content: center;
     img {
       height: 20vw;
+    }
+  }
+  .r-img-mobile {
+    display: none;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    img {
+      height: 50vw;
+      margin: 15px;
     }
   }
 
@@ -176,7 +266,43 @@
     }
   }
 }
+@media (max-width: 768px) {
+  .r-card {
+    .r-img {
+      display: none;
+    }
+    .r-img-mobile {
+      display: flex;
+    }
 
+    .r-card-content {
+      h2 {
+        font-size: 30px;
+        line-height: 30px;
+      }
+      .r-card-text {
+        font-size: 14px;
+        #r-country {
+          font-size: 16px;
+        }
+        .r-card-text-part02 {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 5px;
+          font-size: 14px;
+        }
+      }
+      .r-card-button {
+        display: flex;
+        button {
+          margin-right: 15px;
+          padding: 15px 30px;
+        }
+      }
+    }
+  }
+}
 .tab-content {
   display: none;
 }
