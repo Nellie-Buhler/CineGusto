@@ -108,9 +108,7 @@ h1 {
   font-feature-settings: "ss01" on;
 
   @media (max-width: 768px) {
-    h1 {
-      letter-spacing: -1px;
-    }
+    letter-spacing: -1px;
   }
 }
 

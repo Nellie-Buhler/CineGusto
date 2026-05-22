@@ -5,9 +5,8 @@
   background-color: var(--black);
   color: white;
   margin-top: 50px;
-  padding: 15px;
-  width: 100vw;
   padding: 30px;
+  width: 100vw;
 
   .c-part01 {
     display: flex;
@@ -53,17 +52,6 @@
     align-items: center;
     img {
       height: 50vw;
-    }
-  }
-  @media (max-width: 768px) {
-    .c-part01 {
-      .c-intro-text,
-      .c-intro-date {
-        display: none;
-      }
-    }
-    .c-part02 {
-      display: none;
     }
   }
 
@@ -125,39 +113,59 @@
       }
     }
   }
-}
-@media (max-width: 768px) {
-  .c-info-box {
-    width: 100vw;
-    .c-info-card {
-      width: 40vw;
-      h3 {
-        font-size: 16px;
-        padding: 0px 15px;
-        padding-top: 15px;
-      }
 
-      p {
-        font-size: 14px;
-        padding: 0px 15px;
-        padding-bottom: 15px;
+  @media (max-width: 768px) {
+    .c-part01 {
+      .c-intro-text {
+        background-image: url(../img/Festival/Photo-Asie.jpg);
+        background-size: cover;
+        height: 35vh;
+        padding: 15px;
+        padding-top: 30px;
+        p {
+          display: none;
+        }
       }
-
-      .c-box-card {
-        width: 18vw;
+      .c-intro-text-mobile {
+        display: block;
       }
-
-      .c-info-card-img {
-        height: 120px;
-        margin: 0;
+      .c-intro-date {
+        margin-top: -15px;
+        width: 86vw;
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+    .c-part02 {
+      display: none;
+    }
+    .c-info-box {
+      .c-info-card {
+        .c-box-card {
+          width: 42vw;
+        }
       }
     }
   }
 }
+
+.c-intro-text-mobile {
+  display: none;
+  margin: 30px 0px;
+}
+
 .c-programme {
   display: flex;
   flex-direction: column;
   width: 100vw;
+
+  .c-movie-scroll {
+    display: none;
+    padding: 15px 30px;
+    border: 1px solid var(--black);
+    width: 100vw;
+  }
 
   .c-hour {
     border: 1px solid var(--black);
@@ -170,14 +178,28 @@
     font-weight: 500;
   }
 
+  .c-movie-slider {
+    overflow: hidden;
+    width: 100%;
+  }
+
   .c-movie-box {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    gap: 15px;
+    padding: 30px;
     border: 1px solid var(--black);
-    padding: 30px 30px;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 
   .c-movie-card {
+    flex-shrink: 0; // ✅ CORRECTION
+    scroll-snap-align: start; // ✅ CORRECTION
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -219,22 +241,60 @@
 
   .c-movie-card-right {
     transition: transform 0.5s;
+    &:hover {
+      transform: rotate(6deg);
+    }
   }
-  .c-movie-card-right:hover {
-    transform: rotate(6deg);
-  }
-
   .c-movie-card-middle {
     transition: transform 0.5s;
-  }
-  .c-movie-card-middle:hover {
-    transform: rotate(-7deg);
+    &:hover {
+      transform: rotate(-7deg);
+    }
   }
   .c-movie-card-left {
     transition: transform 0.5s;
+    &:hover {
+      transform: rotate(5deg);
+    }
   }
-  .c-movie-card-left:hover {
-    transform: rotate(5deg);
+}
+
+@media (max-width: 768px) {
+  .c-programme {
+    .c-movie-scroll {
+      display: flex;
+      justify-content: flex-end;
+    }
+    .c-hour {
+      padding: 15px 60px;
+      font-size: 20px;
+    }
+
+    .c-movie-box {
+      gap: 15px;
+      padding: 30px;
+    }
+
+    .c-movie-card {
+      width: 65vw;
+      height: 75vw;
+
+      img {
+        height: 60vw;
+        padding: 10px;
+      }
+
+      h4 {
+        font-size: 16px;
+      }
+
+      .c-movie-card-info {
+        font-size: 14px;
+        span {
+          font-size: 16px;
+        }
+      }
+    }
   }
 }
 

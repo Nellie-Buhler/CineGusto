@@ -51,18 +51,41 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// Dropdown Slider homepage
-const box = document.querySelector(".h-destination-box");
+// // Dropdown Slider homepage
+// const box = document.querySelector(".h-destination-box");
 
-document.querySelector(".slider-prev").addEventListener("click", () => {
-  box.scrollBy({ left: -430, behavior: "smooth" });
+// document.querySelector(".slider-prev").addEventListener("click", () => {
+//   box.scrollBy({ left: -430, behavior: "smooth" });
+// });
+
+// document.querySelector(".slider-next").addEventListener("click", () => {
+//   box.scrollBy({ left: 430, behavior: "smooth" });
+// });
+
+// // Dropdown Slider destinations
+// const box = document.querySelector(".c-movie-box");
+
+// document.querySelector(".slider-prev").addEventListener("click", () => {
+//   box.scrollBy({ left: -430, behavior: "smooth" });
+// });
+
+// document.querySelector(".slider-next").addEventListener("click", () => {
+//   box.scrollBy({ left: 430, behavior: "smooth" });
+// });
+
+const homeSlider = document.querySelector(".h-destination-box");
+document.querySelector(".slider-prev")?.addEventListener("click", () => {
+  homeSlider?.scrollBy({ left: -430, behavior: "smooth" });
+});
+document.querySelector(".slider-next")?.addEventListener("click", () => {
+  homeSlider?.scrollBy({ left: 430, behavior: "smooth" });
 });
 
-document.querySelector(".slider-next").addEventListener("click", () => {
-  box.scrollBy({ left: 430, behavior: "smooth" });
+// Slider programme
+const programmeSlider = document.querySelector(".c-movie-box");
+document.querySelector(".slider-prev")?.addEventListener("click", () => {
+  programmeSlider?.scrollBy({ left: -430, behavior: "smooth" });
 });
-
-document.getElementById("burger-button").addEventListener("click", function () {
-  this.classList.toggle("close");
-  document.getElementById("burger-menu").classList.toggle("active");
+document.querySelector(".slider-next")?.addEventListener("click", () => {
+  programmeSlider?.scrollBy({ left: 430, behavior: "smooth" });
 });
